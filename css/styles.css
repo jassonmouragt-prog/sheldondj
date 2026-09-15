@@ -2229,6 +2229,14 @@ body.is-dark .drawer-nav a {
   opacity: 1;
 }
 
+/* Mídias principais nunca dependem da animação para permanecer visíveis. */
+.js .service.reveal,
+.js .feature-media.reveal,
+.js .service .m-reveal > img,
+.js .feature-media .m-reveal > img {
+  opacity: 1;
+}
+
 /* Hover de zoom com transição mais rápida nos cards de imagem */
 .service .m-reveal > img,
 .p-item .m-reveal > img {
