@@ -67,21 +67,31 @@
   let smoother = null;
 
   if (window.gsap && window.ScrollTrigger) {
-    gsap.registerPlugin(ScrollTrigger);
+    try {
+      window.gsap.registerPlugin(window.ScrollTrigger);
+    } catch (error) {
+      console.warn("ScrollTrigger indisponível; usando animações padrão.", error);
+    }
   }
 
   if (window.gsap && window.ScrollTrigger && window.ScrollSmoother && !prefersReducedMotion) {
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+    try {
+      const plugins = [window.ScrollTrigger, window.ScrollSmoother, window.ScrollToPlugin].filter(Boolean);
+      window.gsap.registerPlugin(...plugins);
 
-    smoother = ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 1.2,
-      effects: false,
-      smoothTouch: false
-    });
+      smoother = window.ScrollSmoother.create({
+        wrapper: "#smooth-wrapper",
+        content: "#smooth-content",
+        smooth: 1.2,
+        effects: false,
+        smoothTouch: false
+      });
 
-    document.documentElement.style.scrollBehavior = "auto";
+      document.documentElement.style.scrollBehavior = "auto";
+    } catch (error) {
+      smoother = null;
+      console.warn("Scroll suave indisponível; usando rolagem nativa.", error);
+    }
   }
 
   if (window.ScrollTrigger) {
@@ -170,44 +180,51 @@
   const overlay = transition ? transition.querySelector(".transition-overlay") : null;
   const mediaImg = transition ? transition.querySelector(".transition-media") : null;
   const transitionLines = transition ? Array.from(transition.querySelectorAll(".tli")) : [];
-  const usesGsapTransition = Boolean(
+  let usesGsapTransition = Boolean(
     transition && transitionLines.length && window.gsap && window.ScrollTrigger && !prefersReducedMotion
   );
 
   if (usesGsapTransition) {
-    document.documentElement.classList.add("has-gsap-transition");
-    gsap.set(transitionLines, { yPercent: 115 });
-    if (mediaImg) gsap.set(mediaImg, { scale: 1.08, yPercent: 0 });
+    try {
+      document.documentElement.classList.add("has-gsap-transition");
+      window.gsap.set(transitionLines, { yPercent: 115 });
+      if (mediaImg) window.gsap.set(mediaImg, { scale: 1.08, yPercent: 0 });
 
-    const transitionTimeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: transition,
-        start: "top 70%",
-        end: "bottom bottom",
-        scrub: 0.6,
-        invalidateOnRefresh: true,
-      },
-    });
+      const transitionTimeline = window.gsap.timeline({
+        scrollTrigger: {
+          trigger: transition,
+          start: "top 70%",
+          end: "bottom bottom",
+          scrub: 0.6,
+          invalidateOnRefresh: true,
+        },
+      });
 
-    if (overlay) {
-      transitionTimeline.to(overlay, { opacity: 0.68, duration: 4.5, ease: "none" }, 0);
+      if (overlay) {
+        transitionTimeline.to(overlay, { opacity: 0.68, duration: 4.5, ease: "none" }, 0);
+      }
+
+      if (mediaImg) {
+        transitionTimeline.to(
+          mediaImg,
+          { scale: 1, yPercent: 4, duration: 4.5, ease: "none" },
+          0
+        );
+      }
+
+      transitionLines.forEach((line, idx) => {
+        transitionTimeline.to(
+          line,
+          { yPercent: 0, duration: 0.7, ease: "power3.out" },
+          0.45 + idx
+        );
+      });
+    } catch (error) {
+      usesGsapTransition = false;
+      document.documentElement.classList.remove("has-gsap-transition");
+      transitionLines.forEach((line) => line.style.removeProperty("transform"));
+      console.warn("Transição GSAP indisponível; usando animação padrão.", error);
     }
-
-    if (mediaImg) {
-      transitionTimeline.to(
-        mediaImg,
-        { scale: 1, yPercent: 4, duration: 4.5, ease: "none" },
-        0
-      );
-    }
-
-    transitionLines.forEach((line, idx) => {
-      transitionTimeline.to(
-        line,
-        { yPercent: 0, duration: 0.7, ease: "power3.out" },
-        0.45 + idx
-      );
-    });
   }
 
   function updateTransition() {
