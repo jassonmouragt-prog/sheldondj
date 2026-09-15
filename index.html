@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sheldon — Mais que DJ | Estrutura e produção audiovisual para eventos em Natal/RN</title>
+  <meta name="description" content="Desde 2011, a Sheldon entrega DJ, som, iluminação, painel de LED, piso de vidro, palco e estrutura audiovisual para eventos em Natal/RN." />
+
+  <!-- FONTES: Manrope (display) + Inter (body) conforme DESIGN_SHELDON_MAIS_QUE_DJ.md -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <!-- ============================================================
+       HEADER — estados transparente / scrolled / dark
+       (DESIGN.md seção 9)
+  ============================================================ -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Sheldon — Mais que DJ, voltar ao início">
+        <img class="logo-img logo-img-light" src="assets/logo%20para%20fundo%20claro.png" alt="Sheldon — Mais que DJ" />
+        <img class="logo-img logo-img-dark" src="assets/logo%20para%20fundo%20escuro.png" alt="" />
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#eventos">Eventos</a>
+      </nav>
+
+      <a class="btn btn-primary btn-header"
+         href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
+         target="_blank" rel="noopener">Solicitar orçamento</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer mobile -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <nav class="drawer-nav" aria-label="Navegação mobile">
+      <a href="#inicio"><span>01</span>Início</a>
+      <a href="#sobre"><span>02</span>Sobre</a>
+      <a href="#servicos"><span>03</span>Serviços</a>
+      <a href="#eventos"><span>04</span>Eventos</a>
+      <a href="#orcamento"><span>05</span>Solicitar orçamento</a>
+    </nav>
+    <div class="drawer-foot">
+      <a class="btn btn-primary"
+         href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
+         target="_blank" rel="noopener">Solicitar orçamento</a>
+      <span class="drawer-info">NATAL/RN · DESDE 2011</span>
+    </div>
+  </div>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+  <main>
+    <!-- ============================================================
+         HERO — editorial, split 5/7, fundo branco (DESIGN.md seção 11)
+    ============================================================ -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal-hero"><span class="eyebrow-dot"></span>NATAL/RN · DESDE 2011</p>
+
+          <h1 class="hero-title">
+            <span class="hl-line"><span class="hl-in">MAIS QUE</span></span>
+            <span class="hl-line"><span class="hl-in">SOM<span class="dot">.</span></span></span>
+            <span class="hl-line"><span class="hl-in">MAIS QUE</span></span>
+            <span class="hl-line"><span class="hl-in">LUZ<span class="dot">.</span></span></span>
+          </h1>
+
+          <p class="hero-sub reveal-hero">
+            Desde 2011, a Sheldon entrega estrutura, tecnologia e experiência audiovisual
+            para festas, casamentos, aniversários, formaturas e grandes eventos em Natal/RN.
+          </p>
+
+          <div class="hero-ctas reveal-hero">
+            <a class="btn btn-primary"
+               href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
+               target="_blank" rel="noopener">Planejar meu evento</a>
+            <a class="text-link" href="#servicos">Conhecer nossos serviços <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M10 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+
+          <p class="hero-place reveal-hero">NATAL/RN <span class="sep">·</span> DESDE 2011</p>
+        </div>
+
+        <div class="hero-media">
+          <!-- FOTO PLACEHOLDER: substituir por fotografia real e vertical de evento da Sheldon. -->
+          <figure class="hero-photo reveal-hero">
+            <div class="m-reveal">
+              <img src="assets/sheldonmaisquedj_1784553620_3945444071371714718_302537259.jpg"
+                   alt="Estrutura de luz e decoração em evento de festa" fetchpriority="high" />
+            </div>
+            <figcaption class="photo-tag">EVENTO · NATAL/RN</figcaption>
+          </figure>
+          <!-- FOTO PLACEHOLDER: segunda imagem sobreposta do hero. -->
+          <figure class="hero-photo hero-photo-small reveal-hero">
+            <div class="m-reveal">
+              <img src="assets/sheldonmaisquedj_1772025005_3840346473318449839_302537259.jpg"
+                   alt="Detalhe de recepção de evento com velas" loading="lazy" />
+            </div>
+          </figure>
+
+          <div class="hero-rule" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BARRA DE AUTORIDADE (DESIGN.md seção 12)
+         NÚMERO +500 É ILUSTRATIVO — substituir pelo total real.
+    ============================================================ -->
+    <section class="authority" aria-label="Números da Sheldon">
+      <div class="container authority-grid">
+        <!-- PLACEHOLDER: número de eventos realizados (+500) — confirmar total real antes de publicar. -->
+        <div class="auth-item">
+          <span class="auth-num">DESDE <span data-count="2011">0</span></span>
+          <span class="auth-label">ANO DE FUNDAÇÃO</span>
+        </div>
+        <div class="auth-item">
+          <span class="auth-num"><span data-count="500">0</span><i>+</i></span>
+          <span class="auth-label">EVENTOS REALIZADOS</span>
+        </div>
+        <div class="auth-item">
+          <span class="auth-num">NATAL<span class="dot">.</span>RN</span>
+          <span class="auth-label">CIDADE SEDE</span>
+        </div>
+        <div class="auth-item">
+          <span class="auth-num">ESTRUTURA</span>
+          <span class="auth-label">COMPLETA</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SEÇÃO CONCEITUAL (DESIGN.md seção 13)
+    ============================================================ -->
+    <section class="concept" id="sobre">
+      <div class="container">
+        <!-- CONTEÚDO EDITÁVEL: substituir pelos textos definitivos enviados pelo cliente. -->
+        <p class="eyebrow concept-eyebrow reveal">SOBRE</p>
+        <div class="concept-grid">
+          <h2 class="heading concept-title reveal">
+            NÃO É SÓ SOBRE<br />
+            EQUIPAMENTOS<span class="dot">.</span>
+          </h2>
+          <div class="concept-copy">
+            <p class="concept-lead reveal">
+              É sobre entender o ambiente, o público e o momento certo para que som,
+              luz e tecnologia funcionem juntos.
+            </p>
+            <p class="concept-body reveal">
+              Cada evento recebe uma estrutura pensada para transformar o espaço
+              e entregar a experiência que aquele momento pede.
+            </p>
+          </div>
+        </div>
+
+        <!-- FOTO PLACEHOLDER: fotografia real de evento/plateia da Sheldon. -->
+        <figure class="concept-photo m-reveal reveal">
+          <img src="assets/sheldonmaisquedj_1776265276_3875916384656566460_302537259.jpg"
+               alt="Ampla vista de evento com iluminação cênica sobre o público" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVIÇOS — mosaico editorial (DESIGN.md seção 14)
+    ============================================================ -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="services-head">
+          <p class="eyebrow reveal">SERVIÇOS</p>
+          <h2 class="heading reveal">TUDO O QUE O SEU<br />EVENTO PRECISA<span class="dot">.</span></h2>
+          <p class="section-sub services-intro reveal">Soluções apresentadas individualmente, com espaço para detalhes, imagens e registros em vídeo.</p>
+        </div>
+
+        <div class="mosaic">
+          <!-- ILUMINAÇÃO — card grande. FOTO PLACEHOLDER. -->
+          <figure class="service s-illum reveal">
+            <div class="m-reveal">
+              <img src="Imagens%20servi%C3%A7os/01%20-%20Ilumina%C3%A7%C3%A3o.png"
+                   alt="Feixes de iluminação âmbar em pista de evento" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="s-name">Iluminação</span>
+              <span class="s-tag">Atmosfera &amp; cena</span>
+            </figcaption>
+          </figure>
+
+          <!-- PAINEL DE LED — card vertical. FOTO PLACEHOLDER. -->
+          <figure class="service s-led reveal">
+            <div class="m-reveal">
+              <img src="Imagens%20servi%C3%A7os/02%20-%20Painel%20de%20Led.png"
+                   alt="Painel de LED colorido integrado ao cenário do evento" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="s-name">Painel de LED</span>
+              <span class="s-tag">Conteúdo &amp; imersão</span>
+            </figcaption>
+          </figure>
+
+          <!-- SOM. FOTO PLACEHOLDER. -->
+          <figure class="service s-som reveal">
+            <div class="m-reveal">
+              <img src="Imagens%20servi%C3%A7os/03%20-%20Som.png"
+                   alt="Iluminação de palco sobre equipamento de som" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="s-name">Som</span>
+              <span class="s-tag">Sonorização</span>
+            </figcaption>
+          </figure>
+
+          <!-- DJ. FOTO PLACEHOLDER. -->
+          <figure class="service s-dj reveal">
+            <div class="m-reveal">
+              <img src="Imagens%20servi%C3%A7os/04%20-%20DJ.png"
+                   alt="Retrato de DJ da Sheldon" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="s-name">DJ</span>
+              <span class="s-tag">Animação musical</span>
+            </figcaption>
+          </figure>
+
+          <!-- PISO DE VIDRO — card horizontal. -->
+          <figure class="service s-piso reveal">
+            <div class="m-reveal">
+              <img src="Imagens%20servi%C3%A7os/05%20-%20Piso%20de%20vidro.png"
+                   alt="Piso de vidro iluminado integrado ao evento" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="s-name">Piso de vidro</span>
+              <span class="s-tag">Pista ativa</span>
+            </figcaption>
+          </figure>
+
+          <!-- PALCO. FOTO PLACEHOLDER. -->
+          <figure class="service s-palco reveal">
+            <div class="m-reveal">
+              <img src="Imagens%20servi%C3%A7os/06%20-%20Palco.png"
+                   alt="Estrutura de palco montada com luzes em evento" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="s-name">Palco</span>
+              <span class="s-tag">Estrutura de cena</span>
+            </figcaption>
+          </figure>
+
+          <!-- ESTRUTURA — faixa full width. FOTO PLACEHOLDER. -->
+          <figure class="service s-estrutura reveal">
+            <div class="m-reveal">
+              <img src="Imagens%20servi%C3%A7os/07%20-%20Estrutura.png"
+                   alt="Multidão sob estrutura de luz de um grande evento" loading="lazy" />
+            </div>
+            <figcaption>
+              <span class="s-name">Estrutura</span>
+              <span class="s-tag">Montagem completa da produção</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- MÓDULO DE VÍDEO: duplicar este bloco para cada serviço e substituir mídia/texto. -->
+        <article class="service-video is-portrait reveal">
+          <div class="service-video-media">
+            <video controls muted playsinline preload="none" data-autoplay-on-reveal
+                   poster="imagens%20baixadas/IMG_5393.JPG.jpeg"
+                   aria-label="Vídeo do serviço de DJ da Sheldon">
+              <source src="imagens%20baixadas/IMG_5392.MP4" type="video/mp4" />
+              Seu navegador não oferece suporte a vídeo HTML5.
+            </video>
+          </div>
+          <div class="service-video-copy">
+            <span class="video-index" aria-hidden="true">PLAY</span>
+            <h3>DJ em movimento<span class="dot">.</span></h3>
+            <p>Um registro audiovisual do serviço de DJ integrado à experiência do evento.</p>
+            <a class="text-link" href="#orcamento">Solicitar orçamento <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M10 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+
+        <section class="service-reels" aria-labelledby="service-reels-title">
+          <div class="service-reels-head">
+            <h3 id="service-reels-title" class="heading-sm reveal">ESTRUTURAS<br />EM CONTEXTO<span class="dot">.</span></h3>
+            <p class="section-sub reveal">Registros verticais para visualizar detalhes da estrutura e sua presença no ambiente.</p>
+          </div>
+          <div class="service-reels-grid">
+            <article class="service-reel reveal">
+              <div class="service-reel-media">
+                <video playsinline preload="none"
+                       poster="imagens%20baixadas/IMG_5398.JPG.jpeg"
+                       aria-label="Vídeo de apresentação da estrutura Sheldon">
+                  <source data-src="imagens%20baixadas/VIDEO%20ESTRUTURAS.MP4" type="video/mp4" />
+                  Seu navegador não oferece suporte a vídeo HTML5.
+                </video>
+                <button class="reel-play" type="button" aria-label="Reproduzir apresentação da estrutura">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.2v11.6L18 12 8.5 6.2Z" fill="currentColor" /></svg>
+                </button>
+              </div>
+              <p><span>REGISTRO 01</span>Apresentação da estrutura</p>
+            </article>
+            <article class="service-reel reveal">
+              <div class="service-reel-media">
+                <video playsinline preload="none"
+                       poster="imagens%20baixadas/IMG_5397.JPG.jpeg"
+                       aria-label="Vídeo de estrutura instalada em evento">
+                  <source data-src="imagens%20baixadas/VIDEO%20ESTRUTURAS%202.MP4" type="video/mp4" />
+                  Seu navegador não oferece suporte a vídeo HTML5.
+                </video>
+                <button class="reel-play" type="button" aria-label="Reproduzir vídeo da estrutura instalada">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.2v11.6L18 12 8.5 6.2Z" fill="currentColor" /></svg>
+                </button>
+              </div>
+              <p><span>REGISTRO 02</span>Estrutura instalada</p>
+            </article>
+            <article class="service-reel reveal">
+              <div class="service-reel-media">
+                <video playsinline preload="none"
+                       poster="imagens%20baixadas/IMG_5397.JPG.jpeg"
+                       aria-label="Vídeo de estrutura integrada ao evento">
+                  <source data-src="imagens%20baixadas/VIDEO%20ESTRUTURAS%203.MP4" type="video/mp4" />
+                  Seu navegador não oferece suporte a vídeo HTML5.
+                </video>
+                <button class="reel-play" type="button" aria-label="Reproduzir vídeo da estrutura em uso">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.2v11.6L18 12 8.5 6.2Z" fill="currentColor" /></svg>
+                </button>
+              </div>
+              <p><span>REGISTRO 03</span>Estrutura em uso</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         DESTAQUES — Iluminação / LED / Piso de vidro
+    ============================================================ -->
+    <section class="feature">
+      <div class="container feature-grid">
+        <figure class="feature-media reveal">
+          <div class="m-reveal">
+            <img src="assets/sheldonmaisquedj_1776265276_3875916390528642641_302537259.jpg"
+                 alt="Cenário de evento com iluminação de ambiente" loading="lazy" />
+          </div>
+        </figure>
+        <div class="feature-copy">
+          <p class="eyebrow reveal">ILUMINAÇÃO</p>
+          <h2 class="heading-sm reveal">A LUZ MUDA<br />TODO O AMBIENTE<span class="dot">.</span></h2>
+          <p class="feature-body reveal">
+            Projetos de iluminação pensados para transformar espaços, destacar cenários
+            e criar a atmosfera certa em cada momento do evento.
+          </p>
+          <p class="feature-meta reveal">MOVING HEADS · ILUMINAÇÃO CÊNICA · AMBIENTE</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature fl">
+      <div class="container feature-grid">
+        <figure class="feature-media reveal">
+          <div class="m-reveal">
+            <img src="assets/sheldonmaisquedj_1787145794_3967188846034685444_302537259.jpg"
+                 alt="Momento de festa com retroprojeção e luzes em movimento" loading="lazy" />
+          </div>
+        </figure>
+        <div class="feature-copy">
+          <p class="eyebrow reveal">PAINEL DE LED</p>
+          <h2 class="heading-sm reveal">IMAGEM QUE FAZ<br />PARTE DO CENÁRIO<span class="dot">.</span></h2>
+          <p class="feature-body reveal">
+            Painéis de LED para conteúdo, identidade visual, transmissões, retrospectivas,
+            cenários e experiências imersivas.
+          </p>
+          <p class="feature-meta reveal">CONTEÚDO · IDENTIDADE · TRANSMISSÃO · IMERSÃO</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="container feature-grid">
+        <figure class="feature-media reveal">
+          <div class="m-reveal">
+            <img src="assets/sheldonmaisquedj_1783947828_3940362299227491579_302537259.jpg"
+                 alt="Pista de evento preparada com iluminação de chão" loading="lazy" />
+          </div>
+        </figure>
+        <div class="feature-copy">
+          <p class="eyebrow reveal">PISO DE VIDRO</p>
+          <h2 class="heading-sm reveal">O CHÃO TAMBÉM<br />FAZ PARTE DO SHOW<span class="dot">.</span></h2>
+          <p class="feature-body reveal">
+            Pisos de vídeo que transformam a pista em um elemento visual ativo do evento.
+          </p>
+          <p class="feature-meta reveal">PISTA DE VÍDEO · CENÁRIO ATIVO · EXPERIÊNCIA</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFÓLIO — mosaico editorial (DESIGN.md seção 16)
+         NOMES/CATEGORIAS SÃO ILUSTRATIVOS — substituir por eventos reais.
+    ============================================================ -->
+    <section class="portfolio" id="eventos">
+      <div class="container">
+        <div class="portfolio-head">
+          <div>
+          <p class="eyebrow reveal">EVENTOS</p>
+            <h2 class="heading reveal">ALGUNS EVENTOS<span class="dot">.</span><br />MUITAS HISTÓRIAS<span class="dot">.</span></h2>
+          </div>
+          <ul class="chips reveal" aria-label="Categorias de eventos">
+            <li>15 anos</li>
+            <li>Casamentos</li>
+            <li>Aniversários</li>
+            <li>Formaturas</li>
+            <li>Corporativos</li>
+            <li>Festas</li>
+          </ul>
+        </div>
+
+        <div class="pfolio">
+          <!-- ITENS MODULARES: substituir textos e mídias quando os eventos forem fornecidos. -->
+          <a class="p-item p-corp reveal" href="#orcamento" data-name="EVENTOS CORPORATIVOS">
+            <div class="m-reveal">
+              <img src="assets/sheldonmaisquedj_1784553620_3945444071371714718_302537259.jpg"
+                   alt="Evento corporativo com palco e projeção" loading="lazy" />
+            </div>
+            <div class="p-info">
+              <span class="p-name">EVENTOS CORPORATIVOS</span>
+              <span class="p-meta">REGISTRO VISUAL · NATAL/RN</span>
+              <span class="p-serv">Estrutura e produção audiovisual</span>
+            </div>
+          </a>
+
+          <a class="p-item p-quinze reveal" href="#orcamento" data-name="CELEBRAÇÕES">
+            <div class="m-reveal">
+              <img src="imagens%20baixadas/IMG_5397.JPG.jpeg"
+                   alt="Celebração de 15 anos com estrutura de iluminação" loading="lazy" />
+            </div>
+            <div class="p-info">
+              <span class="p-name">15 ANOS</span>
+              <span class="p-meta">REGISTRO VISUAL · NATAL/RN</span>
+              <span class="p-serv">Som, luz e tecnologia em contexto</span>
+            </div>
+          </a>
+
+          <a class="p-item p-casa reveal" href="#orcamento" data-name="CASAMENTOS">
+            <div class="m-reveal">
+              <img src="imagens%20baixadas/IMG_5398.JPG.jpeg"
+                   alt="Casamento sobre piso iluminado com estrutura de DJ" loading="lazy" />
+            </div>
+            <div class="p-info">
+              <span class="p-name">CASAMENTOS</span>
+              <span class="p-meta">REGISTRO VISUAL · NATAL/RN</span>
+              <span class="p-serv">Estrutura integrada ao ambiente</span>
+            </div>
+          </a>
+
+          <a class="p-item p-aniversario reveal" href="#orcamento" data-name="ANIVERSÁRIOS">
+            <div class="m-reveal">
+              <img src="imagens%20baixadas/anivers%C3%A1rios.jpg"
+                   alt="Debutante em cenário floral com iluminação azul" loading="lazy" />
+            </div>
+            <div class="p-info">
+              <span class="p-name">ANIVERSÁRIOS</span>
+              <span class="p-meta">REGISTRO VISUAL · NATAL/RN</span>
+              <span class="p-serv">Experiência audiovisual</span>
+            </div>
+          </a>
+
+          <a class="p-item p-formatura reveal" href="#orcamento" data-name="FORMATURAS">
+            <div class="m-reveal">
+              <img src="assets/sheldonmaisquedj_1783947828_3940362302482250639_302537259.jpg"
+                   alt="Salão de formatura com decoração e recepção" loading="lazy" />
+            </div>
+            <div class="p-info">
+              <span class="p-name">FORMATURAS</span>
+              <span class="p-meta">REGISTRO VISUAL · NATAL/RN</span>
+              <span class="p-serv">Produção para grandes momentos</span>
+            </div>
+          </a>
+
+          <a class="p-item p-festas reveal" href="#orcamento" data-name="FESTAS">
+            <div class="m-reveal">
+              <img src="assets/sheldonmaisquedj_1776265276_3875916390528642641_302537259.jpg"
+                   alt="Convidadas dançando em festa com iluminação especial" loading="lazy" />
+            </div>
+            <div class="p-info">
+              <span class="p-name">FESTAS</span>
+              <span class="p-meta">REGISTRO VISUAL · NATAL/RN</span>
+              <span class="p-serv">Atmosfera, estrutura e operação</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TRANSIÇÃO WHITE → BLACK (DESIGN.md seção 17)
+         FOTO PLACEHOLDER — cenografia cinematográfica guiada por scroll.
+    ============================================================ -->
+    <section class="transition" id="transicao" aria-label="Quando as luzes se acendem">
+      <div class="transition-sticky">
+        <img src="assets/sheldonmaisquedj_1783681674_3938129715122437663_302537259.jpg"
+             class="transition-media" alt="Público de evento sob luzes fortes do palco" loading="lazy" />
+        <div class="transition-overlay"></div>
+        <div class="transition-shade" aria-hidden="true"></div>
+
+        <div class="transition-content">
+          <h2>
+            <span class="tl"><span class="tli">QUANDO AS LUZES</span></span>
+            <span class="tl"><span class="tli">SE ACENDEM<span class="dot">,</span></span></span>
+            <span class="tl"><span class="tli">A EXPERIÊNCIA</span></span>
+            <span class="tl"><span class="tli">COMEÇA<span class="dot">.</span></span></span>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ÁREA DARK (DESIGN.md seção 18) — a partir daqui fundo #080808
+    ============================================================ -->
+
+    <!-- HISTÓRIA: conteúdo definitivo será inserido quando enviado pelo cliente. -->
+    <section class="history">
+      <div class="container">
+        <h2 class="heading dark reveal">DESDE 2011<br />FAZENDO PARTE<br />DE GRANDES MOMENTOS<span class="dot">.</span></h2>
+        <div class="history-note reveal">
+          <span>HISTÓRIA &amp; TRAJETÓRIA</span>
+          <p>Este espaço está preparado para receber o texto institucional definitivo da Sheldon.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTROS EDITÁVEIS: substituir por eventos identificados quando fornecidos. -->
+    <section class="cases">
+      <div class="container">
+        <div class="cases-head">
+          <p class="eyebrow dark reveal">CASES</p>
+          <h2 class="heading dark reveal">ESTRUTURAS QUE<br />IMPRESSIONAM<span class="dot">.</span></h2>
+        </div>
+
+        <div class="case">
+          <figure class="case-media reveal">
+            <div class="m-reveal">
+              <img src="imagens%20baixadas/IMG_5397.JPG.jpeg"
+                   alt="Celebração de 15 anos com estrutura de iluminação" loading="lazy" />
+            </div>
+          </figure>
+          <div class="case-copy">
+            <p class="case-index reveal">REGISTRO 01</p>
+            <h3 class="heading-sm dark reveal">CELEBRAÇÕES</h3>
+            <p class="case-meta reveal">PORTFÓLIO VISUAL · NATAL/RN</p>
+            <ul class="case-serv reveal">
+              <li>DJ</li>
+              <li>Iluminação</li>
+              <li>Painel de LED</li>
+              <li>Piso de vidro</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case fl">
+          <figure class="case-media reveal">
+            <div class="m-reveal">
+              <img src="imagens%20baixadas/IMG_5398.JPG.jpeg"
+                   alt="Casamento sobre piso iluminado com estrutura de DJ" loading="lazy" />
+            </div>
+          </figure>
+          <div class="case-copy">
+            <p class="case-index reveal">REGISTRO 02</p>
+            <h3 class="heading-sm dark reveal">CASAMENTOS</h3>
+            <p class="case-meta reveal">PORTFÓLIO VISUAL · NATAL/RN</p>
+            <ul class="case-serv reveal">
+              <li>Som</li>
+              <li>Iluminação</li>
+              <li>Palco</li>
+              <li>DJ</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="case">
+          <figure class="case-media reveal">
+            <div class="m-reveal">
+              <img src="assets/sheldonmaisquedj_1783947828_3940362299227491579_302537259.jpg"
+                   alt="Palco de formatura com projeção e estrutura montada" loading="lazy" />
+            </div>
+          </figure>
+          <div class="case-copy">
+            <p class="case-index reveal">REGISTRO 03</p>
+            <h3 class="heading-sm dark reveal">FORMATURAS</h3>
+            <p class="case-meta reveal">PORTFÓLIO VISUAL · NATAL/RN</p>
+            <ul class="case-serv reveal">
+              <li>Painel de LED</li>
+              <li>DJ</li>
+              <li>Estrutura</li>
+              <li>Iluminação</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACOTES (DESIGN.md seção 22) — linhas editoriais, não cards SaaS -->
+    <section class="packages" id="pacotes">
+      <div class="container">
+        <div class="packages-head">
+          <p class="eyebrow dark reveal">PACOTES</p>
+          <h2 class="heading dark reveal">ESCOLHA A ESTRUTURA<br />PARA O SEU MOMENTO<span class="dot">.</span></h2>
+          <p class="section-sub reveal">
+            Pacotes pensados para diferentes formatos de evento. Se o seu projeto
+            precisar de algo diferente, montamos uma estrutura personalizada.
+          </p>
+        </div>
+
+        <div class="pkg">
+          <span class="pkg-num reveal">01</span>
+          <div class="pkg-head reveal">
+            <h3 class="pkg-title">ESSENCIAL</h3>
+            <p class="pkg-for">Aniversários, confraternizações e eventos de pequeno porte.</p>
+          </div>
+          <div class="pkg-in reveal">
+            <p class="pkg-label">INCLUI</p>
+            <ul>
+              <li>DJ</li>
+              <li>Sistema de som</li>
+              <li>Iluminação ambiente</li>
+              <li>4 pontos de iluminação</li>
+              <li>Estrutura básica</li>
+              <li>Montagem e desmontagem</li>
+              <li>Suporte técnico</li>
+            </ul>
+          </div>
+          <div class="pkg-cta reveal">
+            <span class="pkg-cap"><b>Até 100</b> convidados</span>
+            <a class="btn btn-ghost-dark" href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20pacote%20ESSENCIAL%20para%20o%20meu%20evento." target="_blank" rel="noopener">Quero este pacote</a>
+          </div>
+        </div>
+
+        <div class="pkg">
+          <span class="pkg-num reveal">02</span>
+          <div class="pkg-head reveal">
+            <h3 class="pkg-title">EXPERIÊNCIA <span class="tag-gold">MAIS ESCOLHIDO</span></h3>
+            <p class="pkg-for">15 anos, casamentos e festas que pedem uma atmosfera mais marcante.</p>
+          </div>
+          <div class="pkg-in reveal">
+            <p class="pkg-label">INCLUI</p>
+            <ul>
+              <li>DJ</li>
+              <li>Sistema de som completo</li>
+              <li>Iluminação cênica</li>
+              <li>Moving heads</li>
+              <li>Painel de LED</li>
+              <li>Estrutura</li>
+              <li>Técnico durante o evento</li>
+              <li>Montagem e desmontagem</li>
+            </ul>
+          </div>
+          <div class="pkg-cta reveal">
+            <span class="pkg-cap"><b>Até 200</b> convidados</span>
+            <a class="btn btn-primary-dark" href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20pacote%20EXPERI%C3%8ANCIA%20para%20o%20meu%20evento." target="_blank" rel="noopener">Quero este pacote</a>
+          </div>
+        </div>
+
+        <div class="pkg">
+          <span class="pkg-num reveal">03</span>
+          <div class="pkg-head reveal">
+            <h3 class="pkg-title">IMERSÃO</h3>
+            <p class="pkg-for">Grandes festas, casamentos, formaturas e produções especiais.</p>
+          </div>
+          <div class="pkg-in reveal">
+            <p class="pkg-label">INCLUI</p>
+            <ul>
+              <li>DJ</li>
+              <li>Sonorização completa</li>
+              <li>Projeto de iluminação</li>
+              <li>Painel de LED</li>
+              <li>Piso de vidro</li>
+              <li>Moving heads</li>
+              <li>Estrutura de palco</li>
+              <li>Operação técnica</li>
+              <li>Montagem e desmontagem</li>
+            </ul>
+          </div>
+          <div class="pkg-cta reveal">
+            <span class="pkg-cap"><b>Estrutura</b> completa</span>
+            <a class="btn btn-ghost-dark" href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20pacote%20IMERS%C3%83O%20para%20o%20meu%20evento." target="_blank" rel="noopener">Quero este pacote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACOTE PERSONALIZADO (DESIGN.md seção 23) -->
+    <section class="custom">
+      <div class="container">
+        <div class="custom-card">
+          <div class="custom-copy">
+            <p class="eyebrow dark reveal">SOB MEDIDA</p>
+            <h2 class="heading dark reveal">SEU EVENTO NÃO CABE<br />EM UM PACOTE<span class="dot">?</span></h2>
+            <p class="custom-sub reveal"><strong>PERFEITO<span class="dot">.</span></strong></p>
+            <p class="custom-body reveal">
+              Conte para nossa equipe como será o seu evento. Montamos uma estrutura
+              personalizada considerando espaço, público, estilo e necessidades da produção.
+            </p>
+            <a class="btn btn-primary-dark reveal" href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20montar%20um%20pacote%20personalizado%20para%20o%20meu%20evento." target="_blank" rel="noopener">MONTAR MEU PACOTE</a>
+          </div>
+          <figure class="custom-media reveal">
+            <div class="m-reveal">
+              <img src="assets/sheldonmaisquedj_1772025005_3840346473318449839_302537259.jpg"
+                   alt="Detalhe de celebração com balões e iluminação especial" loading="lazy" />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS (DESIGN.md seção 24)
+         SUBSTITUIR POR DEPOIMENTOS REAIS ANTES DA PUBLICAÇÃO.
+         Conteúdo abaixo é placeholder visual. -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="tests-head">
+          <p class="eyebrow dark reveal">DEPOIMENTOS</p>
+          <h2 class="heading dark reveal">QUEM VIVEU<span class="dot">,</span><br />RECOMENDA<span class="dot">.</span></h2>
+        </div>
+
+        <div class="tests-grid">
+          <blockquote class="test test-featured reveal">
+            <p class="test-quote">“A estrutura mudou completamente o clima da festa. A chegada dos convidados na pista, a luz entrando junto com a música… foi outra experiência.”</p>
+            <footer>
+              <span class="test-name">CLIENTE 01</span>
+              <span class="test-context">FESTA · NATAL/RN</span>
+            </footer>
+            <span class="test-badge">ILUSTRATIVO</span>
+          </blockquote>
+
+          <blockquote class="test reveal">
+            <p class="test-quote">“Tudo chegou no horário, montado e funcionando. A gente só aproveitou a noite.”</p>
+            <footer>
+              <span class="test-name">CLIENTE 02</span>
+              <span class="test-context">CASAMENTO · NATAL/RN</span>
+            </footer>
+            <span class="test-badge">ILUSTRATIVO</span>
+          </blockquote>
+
+          <blockquote class="test reveal">
+            <p class="test-quote">“A equipe cuidou do palco, da tela e do som. Parecia produção de grande show.”</p>
+            <footer>
+              <span class="test-name">CLIENTE 03</span>
+              <span class="test-context">FORMATURA · NATAL/RN</span>
+            </footer>
+            <span class="test-badge">ILUSTRATIVO</span>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL (DESIGN.md seção 25) -->
+    <section class="final-cta" id="orcamento">
+      <div class="final-bg" aria-hidden="true">
+        <img src="assets/sheldonmaisquedj_1787145794_3967188843190996045_302537259.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="container final-grid">
+        <div class="final-copy">
+          <h2 class="display dark reveal">SEU EVENTO<br />MERECE MAIS<span class="dot">.</span></h2>
+          <p class="final-sign reveal">SHELDON<br /><span>MAIS QUE DJ.</span></p>
+        </div>
+        <div class="final-side">
+          <ul class="final-list reveal">
+            <li>SOM<span class="dot">.</span></li>
+            <li>LUZ<span class="dot">.</span></li>
+            <li>TECNOLOGIA<span class="dot">.</span></li>
+            <li>EXPERIÊNCIA<span class="dot">.</span></li>
+          </ul>
+          <p class="final-body reveal">Conte para a gente o que você está planejando.</p>
+          <a class="btn btn-primary-dark reveal" href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento." target="_blank" rel="noopener">FALAR COM A SHELDON</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (DESIGN.md seção 26) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo" aria-label="Sheldon — Mais que DJ">
+            <img class="logo-img logo-img-light" src="assets/logo%20para%20fundo%20claro.png" alt="Sheldon — Mais que DJ" />
+            <img class="logo-img logo-img-dark" src="assets/logo%20para%20fundo%20escuro.png" alt="" />
+          </a>
+          <p class="footer-desc">Estrutura e produção audiovisual para eventos que pedem mais. Natal/RN · Desde 2011.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <p class="footer-label">NAVEGAÇÃO</p>
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#eventos">Eventos</a>
+          <a href="#orcamento">Solicitar orçamento</a>
+        </nav>
+
+        <div class="footer-social">
+          <p class="footer-label">SOCIAL</p>
+          <a class="social-link" href="https://instagram.com/sheldonmaisquedj" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+            @sheldonmaisquedj
+          </a>
+          <a class="social-link" href="https://wa.me/558488196161" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.1A9 9 0 1 0 12 3Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8.5c.3 2 2.5 4.2 4.5 4.5l1.3-1.3 1.7 1.2c-.4 1.1-1.4 1.9-2.6 1.9-2.8 0-5.7-2.9-5.7-5.7 0-1.2.8-2.2 1.9-2.6L10.2 8l1.2 1.7Z" stroke-linejoin="round"/></svg>
+            (84) 8819-6161
+          </a>
+        </div>
+
+        <div class="footer-local">
+          <p class="footer-label">ONDE ESTAMOS</p>
+          <p>Natal/RN</p>
+          <p>Desde 2011</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Sheldon — Mais que DJ. Todos os direitos reservados.</span>
+        <span>ESTRUTURA · SOM · LUZ · TECNOLOGIA</span>
+      </div>
+    </div>
+  </footer>
+    </div><!-- /#smooth-content -->
+  </div><!-- /#smooth-wrapper -->
+
+  <!-- WhatsApp flutuante (DESIGN.md seção 28) -->
+  <a class="whats-float" href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento." target="_blank" rel="noopener" aria-label="Falar com a Sheldon pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.1A9 9 0 1 0 12 3Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8.5c.3 2 2.5 4.2 4.5 4.5l1.3-1.3 1.7 1.2c-.4 1.1-1.4 1.9-2.6 1.9-2.8 0-5.7-2.9-5.7-5.7 0-1.2.8-2.2 1.9-2.6L10.2 8l1.2 1.7Z" stroke-linejoin="round"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollSmoother.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
