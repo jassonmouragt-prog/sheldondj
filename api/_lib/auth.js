@@ -87,7 +87,7 @@ const failures = new Map();
 
 export function loginLocked(key) {
   const record = failures.get(key);
-  if (!record) return 0;
+  if (!record || !record.until) return 0;
   if (Date.now() > record.until) {
     failures.delete(key);
     return 0;

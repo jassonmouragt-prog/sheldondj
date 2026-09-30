@@ -7,10 +7,11 @@
   "scripts": {
     "build": "node build/build.mjs",
     "dev": "node build/build.mjs",
-    "check": "node build/check-text.mjs && node build/check-media.mjs && node build/check-api.mjs",
+    "check": "node build/check-text.mjs && node build/check-media.mjs && node build/check-api.mjs && node build/check-routes.mjs && node build/check-github.mjs",
     "check:text": "node build/check-text.mjs",
     "check:media": "node build/check-media.mjs",
     "check:api": "node build/check-api.mjs",
+    "check:routes": "node build/check-routes.mjs",
     "check:markup": "node build/check.mjs",
     "schema": "python build/make-schema.py"
   },
