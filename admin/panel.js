@@ -341,6 +341,9 @@ function renderList(field, value, onChange) {
 
       const fields = field.fields ?? field.field?.fields ?? [];
       for (const sub of fields) {
+        // Campos ocultos continuam no JSON: apenas nao viram controle. Como o
+        // envio leva o documento inteiro, o valor deles e preservado.
+        if (sub.hidden) continue;
         box.appendChild(
           renderField(sub, item[sub.name], (next) => {
             item[sub.name] = next;
