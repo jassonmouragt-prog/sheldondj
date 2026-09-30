@@ -1,20 +1,31 @@
 {
   "history": {
-    "titleLines": ["DESDE 2011", "FAZENDO PARTE", "DE GRANDES MOMENTOS"],
+    "titleLines": [
+      "DESDE 2011",
+      "FAZENDO PARTE",
+      "DE GRANDES MOMENTOS"
+    ],
     "noteLabel": "HISTÓRIA & TRAJETÓRIA",
     "note": "Este espaço está preparado para receber o texto institucional definitivo da Sheldon."
   },
-
   "cases": {
     "eyebrow": "CASES",
-    "titleLines": ["ESTRUTURAS QUE", "IMPRESSIONAM"],
+    "titleLines": [
+      "ESTRUTURAS QUE",
+      "IMPRESSIONAM"
+    ],
     "items": [
       {
         "invert": "",
         "badge": "REGISTRO 01",
         "title": "CELEBRAÇÕES",
         "meta": "PORTFÓLIO VISUAL · NATAL/RN",
-        "services": ["DJ", "Iluminação", "Painel de LED", "Piso de vidro"],
+        "services": [
+          "DJ",
+          "Iluminação",
+          "Painel de LED",
+          "Piso de vidro"
+        ],
         "image": "imagens baixadas/IMG_5397.JPG.jpeg",
         "imageAlt": "Celebração de 15 anos com estrutura de iluminação"
       },
@@ -23,7 +34,12 @@
         "badge": "REGISTRO 02",
         "title": "CASAMENTOS",
         "meta": "PORTFÓLIO VISUAL · NATAL/RN",
-        "services": ["Som", "Iluminação", "Palco", "DJ"],
+        "services": [
+          "Som",
+          "Iluminação",
+          "Palco",
+          "DJ"
+        ],
         "image": "imagens baixadas/IMG_5398.JPG.jpeg",
         "imageAlt": "Casamento sobre piso iluminado com estrutura de DJ"
       },
@@ -32,16 +48,23 @@
         "badge": "REGISTRO 03",
         "title": "FORMATURAS",
         "meta": "PORTFÓLIO VISUAL · NATAL/RN",
-        "services": ["Painel de LED", "DJ", "Estrutura", "Iluminação"],
-"image": "assets/sheldonmaisquedj_1783947828_3940362299227491579_302537259.jpg",
-      "imageAlt": "Palco de formatura com projeção e estrutura montada"
+        "services": [
+          "Painel de LED",
+          "DJ",
+          "Estrutura",
+          "Iluminação"
+        ],
+        "image": "assets/sheldonmaisquedj_1783947828_3940362299227491579_302537259.jpg",
+        "imageAlt": "Palco de formatura com projeção e estrutura montada"
       }
     ]
   },
-
   "packages": {
     "eyebrow": "PACOTES",
-    "titleLines": ["ESCOLHA A ESTRUTURA", "PARA O SEU MOMENTO"],
+    "titleLines": [
+      "ESCOLHA A ESTRUTURA",
+      "PARA O SEU MOMENTO"
+    ],
     "intro": "Pacotes pensados para diferentes formatos de evento. Se o seu projeto precisar de algo diferente, montamos uma estrutura personalizada.",
     "items": [
       {
@@ -112,10 +135,12 @@
       }
     ]
   },
-
   "custom": {
     "eyebrow": "SOB MEDIDA",
-    "titleLines": ["SEU EVENTO NÃO CABE", "EM UM PACOTE"],
+    "titleLines": [
+      "SEU EVENTO NÃO CABE",
+      "EM UM PACOTE"
+    ],
     "sub": "PERFEITO",
     "body": "Conte para nossa equipe como será o seu evento. Montamos uma estrutura personalizada considerando espaço, público, estilo e necessidades da produção.",
     "ctaLabel": "MONTAR MEU PACOTE",
@@ -123,12 +148,17 @@
     "image": "assets/sheldonmaisquedj_1772025005_3840346473318449839_302537259.jpg",
     "imageAlt": "Detalhe de celebração com balões e iluminação especial"
   },
-
   "testimonials": {
     "eyebrow": "DEPOIMENTOS",
     "titleLines": [
-      { "text": "QUEM VIVEU", "dot": "," },
-      { "text": "RECOMENDA", "dot": "." }
+      {
+        "text": "QUEM VIVEU",
+        "dot": ","
+      },
+      {
+        "text": "RECOMENDA",
+        "dot": "."
+      }
     ],
     "items": [
       {
@@ -154,28 +184,49 @@
       }
     ]
   },
-
   "finalCta": {
-    "titleLines": ["SEU EVENTO", "MERECE MAIS"],
+    "titleLines": [
+      "SEU EVENTO",
+      "MERECE MAIS"
+    ],
     "signTop": "SHELDON",
     "signBottom": "MAIS QUE DJ.",
-    "list": ["SOM", "LUZ", "TECNOLOGIA", "EXPERIÊNCIA"],
+    "list": [
+      "SOM",
+      "LUZ",
+      "TECNOLOGIA",
+      "EXPERIÊNCIA"
+    ],
     "body": "Conte para a gente o que você está planejando.",
     "ctaLabel": "FALAR COM A SHELDON",
     "ctaHref": "https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento.",
     "image": "assets/sheldonmaisquedj_1787145794_3967188843190996045_302537259.jpg",
     "imageAlt": ""
   },
-
   "footer": {
     "description": "Estrutura e produção audiovisual para eventos que pedem mais. Natal/RN · Desde 2011.",
     "navLabel": "NAVEGAÇÃO",
     "nav": [
-      { "label": "Início", "href": "#inicio" },
-      { "label": "Sobre", "href": "#sobre" },
-      { "label": "Serviços", "href": "#servicos" },
-      { "label": "Eventos", "href": "#eventos" },
-      { "label": "Solicitar orçamento", "href": "#orcamento" }
+      {
+        "label": "Início",
+        "href": "#inicio"
+      },
+      {
+        "label": "Sobre",
+        "href": "#sobre"
+      },
+      {
+        "label": "Serviços",
+        "href": "#servicos"
+      },
+      {
+        "label": "Eventos",
+        "href": "#eventos"
+      },
+      {
+        "label": "Solicitar orçamento",
+        "href": "#orcamento"
+      }
     ],
     "socialLabel": "SOCIAL",
     "social": [
