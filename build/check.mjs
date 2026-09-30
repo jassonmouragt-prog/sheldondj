@@ -1,7 +1,20 @@
 import { readFileSync } from 'node:fs';
 import { execSync } from 'node:child_process';
 
-const original = execSync('git show HEAD:index.html', { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+/**
+ * Referencia congelada do site antes do CMS. `index.html` foi movido para
+ * `src/index.template.html`, entao HEAD ja nao serve mais: o ultimo commit que
+ * ainda tinha o arquivo original e 57b27e9.
+ */
+const REF = '57b27e9';
+
+let original;
+try {
+  original = execSync(`git show ${REF}:index.html`, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+} catch {
+  console.error(`Nao foi possivel ler a referencia ${REF}:index.html do git.`);
+  process.exit(1);
+}
 const built = readFileSync('dist/index.html', 'utf8');
 
 /**
