@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-c="seo.title">Sheldon — Mais que DJ | Estrutura e produção audiovisual para eventos em Natal/RN</title>
+  <meta name="description" data-c-attr="content" data-c="seo.description" content="Desde 2011, a Sheldon entrega DJ, som, iluminação, painel de LED, piso de vidro, palco e estrutura audiovisual para eventos em Natal/RN." />
+
+  <!-- FONTES: Manrope (display) + Inter (body) conforme DESIGN_SHELDON_MAIS_QUE_DJ.md -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <!-- ============================================================
+       HEADER — estados transparente / scrolled / dark
+       (DESIGN.md seção 9)
+  ============================================================ -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Sheldon — Mais que DJ, voltar ao início">
+        <img class="logo-img logo-img-light" src="assets/logo%20para%20fundo%20claro.png" alt="Sheldon — Mais que DJ" />
+        <img class="logo-img logo-img-dark" src="assets/logo%20para%20fundo%20escuro.png" alt="" />
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal" data-c-repeat="header.nav">
+        <template data-c-item><a href="{{value.href}}">{{value.label}}</a></template>
+      </nav>
+
+      <a class="btn btn-primary btn-header"
+         data-c-attr="href" data-c="header.ctaHref"
+         href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
+         target="_blank" rel="noopener" data-c="header.ctaLabel">Solicitar orçamento</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="drawer">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Drawer mobile -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <nav class="drawer-nav" aria-label="Navegação mobile" data-c-repeat="header.drawerNav">
+      <template data-c-item><a href="{{value.href}}"><span>{{index2}}</span>{{value.label}}</a></template>
+    </nav>
+    <div class="drawer-foot">
+      <a class="btn btn-primary"
+         data-c-attr="href" data-c="header.ctaHref"
+         href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
+         target="_blank" rel="noopener" data-c="header.ctaLabel">Solicitar orçamento</a>
+      <span class="drawer-info" data-c="brand.tagline">NATAL/RN · DESDE 2011</span>
+    </div>
+  </div>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+  <main>
+    <!-- ============================================================
+         HERO — editorial, split 5/7, fundo branco (DESIGN.md seção 11)
+    ============================================================ -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal-hero"><span class="eyebrow-dot"></span><span data-c="hero.eyebrow">NATAL/RN · DESDE 2011</span></p>
+
+          <h1 class="hero-title" data-c-repeat="hero.titleLines">
+            <template data-c-item><span class="hl-line"><span class="hl-in">{{value.text}}{{dotIf}}</span></span></template>
+          </h1>
+
+          <p class="hero-sub reveal-hero" data-c="hero.sub">
+            Desde 2011, a Sheldon entrega estrutura, tecnologia e experiência audiovisual
+            para festas, casamentos, aniversários, formaturas e grandes eventos em Natal/RN.
+          </p>
+
+          <div class="hero-ctas reveal-hero">
+            <a class="btn btn-primary"
+               data-c-attr="href" data-c="hero.ctaHref"
+               href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
+               target="_blank" rel="noopener" data-c="hero.ctaLabel">Planejar meu evento</a>
+            <a class="text-link" href="#servicos"><span data-c="hero.linkLabel">Conhecer nossos serviços</span> <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M10 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+
+          <p class="hero-place reveal-hero"><span data-c="hero.placeCity">NATAL/RN</span> <span class="sep">·</span> <span data-c="hero.placeSince">DESDE 2011</span></p>
+        </div>
+
+        <div class="hero-media">
+          <figure class="hero-photo reveal-hero">
+            <div class="m-reveal">
+              <img data-c-img="hero.image"
+                   src="assets/sheldonmaisquedj_1784553620_3945444071371714718_302537259.jpg"
+                   alt="Estrutura de luz e decoração em evento de festa" fetchpriority="high" />
+            </div>
+            <figcaption class="photo-tag" data-c="hero.imageTag">EVENTO · NATAL/RN</figcaption>
+          </figure>
+          <figure class="hero-photo hero-photo-small reveal-hero">
+            <div class="m-reveal">
+              <img data-c-img="hero.imageSecondary"
+                   src="assets/sheldonmaisquedj_1772025005_3840346473318449839_302537259.jpg"
+                   alt="Detalhe de recepção de evento com velas" loading="lazy" />
+            </div>
+          </figure>
+
+          <div class="hero-rule" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BARRA DE AUTORIDADE (DESIGN.md seção 12)
+         NÚMERO +500 É ILUSTRATIVO — substituir pelo total real.
+    ============================================================ -->
+    <section class="authority" aria-label="Números da Sheldon">
+      <div class="container authority-grid" data-c-repeat="authority.items">
+        <template data-c-item>
+          <div class="auth-item">
+            <span class="auth-num">{{value.prefix}}{{count}}{{dotIf}}{{suffix}}</span>
+            <span class="auth-label">{{value.label}}</span>
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SEÇÃO CONCEITUAL (DESIGN.md seção 13)
+    ============================================================ -->
+    <section class="concept" id="sobre">
+      <div class="container">
+        <p class="eyebrow concept-eyebrow reveal" data-c="concept.eyebrow">SOBRE</p>
+        <div class="concept-grid">
+          <h2 class="heading concept-title reveal" data-c-repeat="concept.titleLines" data-c-join="br" data-c-dot=".">
+            <template data-c-item>{{value}}{{dotLast}}</template>
+          </h2>
+          <div class="concept-copy">
+            <p class="concept-lead reveal" data-c="concept.lead">
+              É sobre entender o ambiente, o público e o momento certo para que som,
+              luz e tecnologia funcionem juntos.
+            </p>
+            <p class="concept-body reveal" data-c="concept.body">
+              Cada evento recebe uma estrutura pensada para transformar o espaço
+              e entregar a experiência que aquele momento pede.
+            </p>
+          </div>
+        </div>
+
+        <figure class="concept-photo m-reveal reveal">
+          <img data-c-img="concept.image"
+               src="assets/sheldonmaisquedj_1776265276_3875916384656566460_302537259.jpg"
+               alt="Ampla vista de evento com iluminação cênica sobre o público" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVIÇOS — mosaico editorial (DESIGN.md seção 14)
+    ============================================================ -->
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="services-head">
+          <p class="eyebrow reveal" data-c="services.eyebrow">SERVIÇOS</p>
+          <h2 class="heading reveal" data-c-repeat="services.titleLines" data-c-join="br" data-c-dot=".">
+            <template data-c-item>{{value}}{{dotLast}}</template>
+          </h2>
+          <p class="section-sub services-intro reveal" data-c="services.intro">Soluções apresentadas individualmente, com espaço para detalhes, imagens e registros em vídeo.</p>
+        </div>
+
+        <div class="mosaic" data-c-repeat="services.items">
+          <template data-c-item>
+<figure class="service s-{{value.variant|class}} reveal">
+    <div class="m-reveal">
+      <img src="{{value.image|url}}" alt="{{value.imageAlt}}" loading="eager" />
+    </div>
+              <figcaption>
+                <span class="s-name">{{value.name}}</span>
+                <span class="s-tag">{{value.tag}}</span>
+              </figcaption>
+            </figure>
+          </template>
+        </div>
+
+        <div data-c-repeat="services.videos">
+          <template data-c-item>
+            <article class="service-video is-portrait reveal">
+              <div class="service-video-media">
+                <video controls muted playsinline preload="none" data-autoplay-on-reveal
+                       poster="{{value.poster|url}}"
+aria-label="{{value.videoLabel}}">
+          <source src="{{value.video|url}}" type="video/mp4" />
+          Seu navegador não oferece suporte a vídeo HTML5.
+        </video>
+      </div>
+      <div class="service-video-copy">
+        <span class="video-index" aria-hidden="true">{{value.badge}}</span>
+        <h3>{{value.title}}{{dotIf}}</h3>
+                <p>{{value.body}}</p>
+                <a class="text-link" href="{{value.ctaHref}}">{{value.ctaLabel}} <svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M1 8h13M10 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              </div>
+            </article>
+          </template>
+        </div>
+
+        <section class="service-reels" aria-labelledby="service-reels-title">
+          <div class="service-reels-head">
+            <h3 id="service-reels-title" class="heading-sm reveal" data-c-repeat="reels.titleLines" data-c-join="br" data-c-dot=".">
+              <template data-c-item>{{value}}{{dotLast}}</template>
+            </h3>
+            <p class="section-sub reveal" data-c="reels.intro">Registros verticais para visualizar detalhes da estrutura e sua presença no ambiente.</p>
+          </div>
+          <div class="service-reels-grid" data-c-repeat="reels.items">
+            <template data-c-item>
+              <article class="service-reel reveal">
+                <div class="service-reel-media">
+                  <video playsinline preload="none" poster="{{value.poster|url}}"
+aria-label="{{value.videoLabel}}">
+            <source data-src="{{value.video|url}}" type="video/mp4" />
+            Seu navegador não oferece suporte a vídeo HTML5.
+          </video>
+          <button class="reel-play" type="button" aria-label="{{value.playLabel}}">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 6.2v11.6L18 12 8.5 6.2Z" fill="currentColor" /></svg>
+                  </button>
+                </div>
+                <p><span>{{value.badge}}</span>{{value.title}}</p>
+              </article>
+            </template>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <div data-c-repeat="features.items">
+      <template data-c-item>
+        <section class="feature {{value.invert|class}}">
+<div class="container feature-grid">
+    <figure class="feature-media reveal">
+      <div class="m-reveal">
+        <img src="{{value.image|url}}" alt="{{value.imageAlt}}" loading="eager" />
+      </div>
+            </figure>
+            <div class="feature-copy">
+              <p class="eyebrow reveal">{{value.eyebrow}}</p>
+              <h2 class="heading-sm reveal">{{value.title|br}}{{dot}}</h2>
+              <p class="feature-body reveal">{{value.body}}</p>
+              <p class="feature-meta reveal">{{value.meta}}</p>
+            </div>
+          </div>
+        </section>
+      </template>
+    </div>
+
+    <!-- ============================================================
+         PORTFÓLIO — mosaico editorial (DESIGN.md seção 16)
+         NOMES/CATEGORIAS SÃO ILUSTRATIVOS — substituir por eventos reais.
+    ============================================================ -->
+    <section class="portfolio" id="eventos">
+      <div class="container">
+        <div class="portfolio-head">
+          <div>
+          <p class="eyebrow reveal" data-c="portfolio.eyebrow">EVENTOS</p>
+<h2 class="heading reveal" data-c-repeat="portfolio.titleLines" data-c-join="br">
+            <template data-c-item>{{value.text}}{{dotIf}}</template>
+          </h2>
+          </div>
+          <ul class="chips reveal" aria-label="Categorias de eventos" data-c-repeat="portfolio.chips">
+<template data-c-item><li>{{value}}</li></template>
+      </ul>
+      </div>
+
+        <div class="pfolio" data-c-repeat="portfolio.items">
+          <template data-c-item>
+            <a class="p-item p-{{value.variant|class}} reveal" href="{{value.href}}">
+              <div class="m-reveal">
+                <img src="{{value.image|url}}" alt="{{value.imageAlt}}" loading="lazy" />
+              </div>
+              <div class="p-info">
+                <span class="p-name">{{value.name}}</span>
+                <span class="p-meta">{{value.meta}}</span>
+                <span class="p-serv">{{value.services}}</span>
+              </div>
+            </a>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TRANSIÇÃO WHITE → BLACK (DESIGN.md seção 17)
+         FOTO PLACEHOLDER — cenografia cinematográfica guiada por scroll.
+    ============================================================ -->
+    <section class="transition" id="transicao" aria-label="Quando as luzes se acendem">
+      <div class="transition-sticky">
+        <img data-c-img="transition.image"
+             class="transition-media"
+             src="assets/sheldonmaisquedj_1783681674_3938129715122437663_302537259.jpg"
+             alt="Público de evento sob luzes fortes do palco" loading="lazy" />
+        <div class="transition-overlay"></div>
+        <div class="transition-shade" aria-hidden="true"></div>
+
+        <div class="transition-content">
+          <h2 data-c-repeat="transition.titleLines">
+            <template data-c-item><span class="tl"><span class="tli">{{value.text}}{{dotIf}}</span></span></template>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ÁREA DARK (DESIGN.md seção 18) — a partir daqui fundo #080808
+    ============================================================ -->
+
+    <section class="history">
+      <div class="container">
+        <h2 class="heading dark reveal" data-c-repeat="history.titleLines" data-c-join="br" data-c-dot=".">
+          <template data-c-item>{{value}}{{dotLast}}</template>
+        </h2>
+        <div class="history-note reveal">
+          <span data-c="history.noteLabel">HISTÓRIA &amp; TRAJETÓRIA</span>
+          <p data-c="history.note">Este espaço está preparado para receber o texto institucional definitivo da Sheldon.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cases">
+      <div class="container">
+        <div class="cases-head">
+          <p class="eyebrow dark reveal" data-c="cases.eyebrow">CASES</p>
+          <h2 class="heading dark reveal" data-c-repeat="cases.titleLines" data-c-join="br" data-c-dot=".">
+            <template data-c-item>{{value}}{{dotLast}}</template>
+          </h2>
+        </div>
+
+        <div data-c-repeat="cases.items">
+          <template data-c-item>
+            <div class="case {{value.invert|class}}">
+              <figure class="case-media reveal">
+                <div class="m-reveal">
+                  <img src="{{value.image|url}}" alt="{{value.imageAlt}}" loading="lazy" />
+                </div>
+              </figure>
+              <div class="case-copy">
+                <p class="case-index reveal">{{value.badge}}</p>
+                <h3 class="heading-sm dark reveal">{{value.title}}</h3>
+                <p class="case-meta reveal">{{value.meta}}</p>
+<ul class="case-serv reveal" data-c-repeat="services">
+                <template data-c-item><li>{{value}}</li></template>
+              </ul>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACOTES (DESIGN.md seção 22) — linhas editoriais, não cards SaaS -->
+    <section class="packages" id="pacotes">
+      <div class="container">
+        <div class="packages-head">
+          <p class="eyebrow dark reveal" data-c="packages.eyebrow">PACOTES</p>
+          <h2 class="heading dark reveal" data-c-repeat="packages.titleLines" data-c-join="br" data-c-dot=".">
+            <template data-c-item>{{value}}{{dotLast}}</template>
+          </h2>
+          <p class="section-sub reveal" data-c="packages.intro">
+            Pacotes pensados para diferentes formatos de evento. Se o seu projeto
+            precisar de algo diferente, montamos uma estrutura personalizada.
+          </p>
+        </div>
+
+        <div data-c-repeat="packages.items">
+          <template data-c-item>
+            <div class="pkg">
+              <span class="pkg-num reveal">{{value.badge}}</span>
+              <div class="pkg-head reveal">
+                <h3 class="pkg-title">{{value.title}}<span class="tag-gold">{{value.tag}}</span></h3>
+                <p class="pkg-for">{{value.forWho}}</p>
+              </div>
+              <div class="pkg-in reveal">
+                <p class="pkg-label">{{value.includesLabel}}</p>
+<ul data-c-repeat="includes">
+                <template data-c-item><li>{{value}}</li></template>
+              </ul>
+              </div>
+              <div class="pkg-cta reveal">
+                <span class="pkg-cap"><b>{{value.capacityLabel}}</b> {{value.capacityText}}</span>
+                <a class="{{value.ctaStyle|class}}" href="{{value.ctaHref}}" target="_blank" rel="noopener">{{value.ctaLabel}}</a>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACOTE PERSONALIZADO (DESIGN.md seção 23) -->
+    <section class="custom">
+      <div class="container">
+        <div class="custom-card">
+          <div class="custom-copy">
+            <p class="eyebrow dark reveal" data-c="custom.eyebrow">SOB MEDIDA</p>
+            <h2 class="heading dark reveal" data-c-repeat="custom.titleLines" data-c-join="br" data-c-dot="?">
+              <template data-c-item>{{value}}{{dotLast}}</template>
+            </h2>
+            <p class="custom-sub reveal"><strong data-c="custom.sub" data-c-dot=".">PERFEITO</strong></p>
+            <p class="custom-body reveal" data-c="custom.body">
+              Conte para nossa equipe como será o seu evento. Montamos uma estrutura
+              personalizada considerando espaço, público, estilo e necessidades da produção.
+            </p>
+            <a class="btn btn-primary-dark reveal"
+               href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20montar%20um%20pacote%20personalizado%20para%20o%20meu%20evento."
+               target="_blank" rel="noopener"
+               data-c-attr="href" data-c="custom.ctaHref"><span data-c="custom.ctaLabel">MONTAR MEU PACOTE</span></a>
+          </div>
+          <figure class="custom-media reveal">
+            <div class="m-reveal">
+              <img data-c-img="custom.image"
+                   src="assets/sheldonmaisquedj_1772025005_3840346473318449839_302537259.jpg"
+                   alt="Detalhe de celebração com balões e iluminação especial" loading="lazy" />
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="tests-head">
+          <p class="eyebrow dark reveal" data-c="testimonials.eyebrow">DEPOIMENTOS</p>
+          <h2 class="heading dark reveal" data-c-repeat="testimonials.titleLines" data-c-join="br">
+            <template data-c-item>{{value.text}}{{dotIf}}</template>
+          </h2>
+        </div>
+
+        <div class="tests-grid" data-c-repeat="testimonials.items">
+          <template data-c-item>
+            <blockquote class="test {{value.featured|class}} reveal">
+              <p class="test-quote">{{value.quote}}</p>
+              <footer>
+                <span class="test-name">{{value.name}}</span>
+                <span class="test-context">{{value.context}}</span>
+              </footer>
+              <span class="test-badge">{{value.badge}}</span>
+            </blockquote>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL (DESIGN.md seção 25) -->
+    <section class="final-cta" id="orcamento">
+      <div class="final-bg" aria-hidden="true">
+        <img data-c-img="finalCta.image" src="assets/sheldonmaisquedj_1787145794_3967188843190996045_302537259.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="container final-grid">
+        <div class="final-copy">
+          <h2 class="display dark reveal" data-c-repeat="finalCta.titleLines" data-c-join="br" data-c-dot=".">
+            <template data-c-item>{{value}}{{dotLast}}</template>
+          </h2>
+          <p class="final-sign reveal"><span data-c="finalCta.signTop">SHELDON</span><br /><span data-c="finalCta.signBottom">MAIS QUE DJ.</span></p>
+        </div>
+        <div class="final-side">
+          <ul class="final-list reveal" data-c-repeat="finalCta.list" data-c-dot=".">
+            <template data-c-item><li>{{value}}{{dot}}</li></template>
+          </ul>
+          <p class="final-body reveal" data-c="finalCta.body">Conte para a gente o que você está planejando.</p>
+          <a class="btn btn-primary-dark reveal"
+             href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
+             target="_blank" rel="noopener"
+             data-c-attr="href" data-c="finalCta.ctaHref"><span data-c="finalCta.ctaLabel">FALAR COM A SHELDON</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER (DESIGN.md seção 26) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo" aria-label="Sheldon — Mais que DJ">
+            <img class="logo-img logo-img-light" src="assets/logo%20para%20fundo%20claro.png" alt="Sheldon — Mais que DJ" />
+            <img class="logo-img logo-img-dark" src="assets/logo%20para%20fundo%20escuro.png" alt="" />
+          </a>
+          <p class="footer-desc">Estrutura e produção audiovisual para eventos que pedem mais. Natal/RN · Desde 2011.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé" data-c-repeat="footer.nav">
+          <p class="footer-label" data-c-keep data-c="footer.navLabel">NAVEGAÇÃO</p>
+          <template data-c-item><a href="{{value.href}}">{{value.label}}</a></template>
+        </nav>
+
+        <div class="footer-social" data-c-repeat="footer.social">
+          <p class="footer-label" data-c-keep data-c="footer.socialLabel">SOCIAL</p>
+          <template data-c-item>
+            <a class="social-link" href="{{value.href}}" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">{{value.iconPath|svg}}</svg>
+              {{value.label}}
+            </a>
+          </template>
+        </div>
+
+        <div class="footer-local">
+          <p class="footer-label" data-c="footer.localLabel">ONDE ESTAMOS</p>
+          <p data-c="footer.city">Natal/RN</p>
+          <p data-c="footer.since">Desde 2011</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> <span data-c="footer.copyright">Sheldon — Mais que DJ. Todos os direitos reservados.</span></span>
+        <span data-c="footer.slogan">ESTRUTURA · SOM · LUZ · TECNOLOGIA</span>
+      </div>
+    </div>
+  </footer>
+    </div><!-- /#smooth-content -->
+  </div><!-- /#smooth-wrapper -->
+
+  <!-- WhatsApp flutuante (DESIGN.md seção 28) -->
+  <a class="whats-float"
+     href="https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
+     data-c-attr="href" data-c="contact.whatsappHref"
+     target="_blank" rel="noopener" aria-label="Falar com a Sheldon pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.1A9 9 0 1 0 12 3Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8.5c.3 2 2.5 4.2 4.5 4.5l1.3-1.3 1.7 1.2c-.4 1.1-1.4 1.9-2.6 1.9-2.8 0-5.7-2.9-5.7-5.7 0-1.2.8-2.2 1.9-2.6L10.2 8l1.2 1.7Z" stroke-linejoin="round"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollSmoother.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

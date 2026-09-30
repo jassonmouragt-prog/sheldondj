@@ -350,6 +350,10 @@ button {
   transform: translateY(-2px);
 }
 
+.tag-gold:empty {
+  display: none;
+}
+
 /* ---------------------------------- Header --------------------------------- */
 .header {
   position: fixed;

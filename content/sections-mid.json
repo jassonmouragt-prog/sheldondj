@@ -1,0 +1,212 @@
+{
+  "services": {
+    "eyebrow": "SERVIÇOS",
+    "titleLines": ["TUDO O QUE O SEU", "EVENTO PRECISA"],
+    "intro": "Soluções apresentadas individualmente, com espaço para detalhes, imagens e registros em vídeo.",
+
+    "items": [
+      {
+        "variant": "illum",
+        "name": "Iluminação",
+        "tag": "Atmosfera & cena",
+        "image": "Imagens serviços/01 - Iluminação.png",
+        "imageAlt": "Feixes de iluminação âmbar em pista de evento"
+      },
+      {
+        "variant": "led",
+        "name": "Painel de LED",
+        "tag": "Conteúdo & imersão",
+        "image": "Imagens serviços/02 - Painel de Led.png",
+        "imageAlt": "Painel de LED colorido integrado ao cenário do evento"
+      },
+      {
+        "variant": "som",
+        "name": "Som",
+        "tag": "Sonorização",
+        "image": "Imagens serviços/03 - Som.png",
+        "imageAlt": "Iluminação de palco sobre equipamento de som"
+      },
+      {
+        "variant": "dj",
+        "name": "DJ",
+        "tag": "Animação musical",
+        "image": "Imagens serviços/04 - DJ.png",
+        "imageAlt": "Retrato de DJ da Sheldon"
+      },
+      {
+        "variant": "piso",
+        "name": "Piso de vidro",
+        "tag": "Pista ativa",
+        "image": "Imagens serviços/05 - Piso de vidro.png",
+        "imageAlt": "Piso de vidro iluminado integrado ao evento"
+      },
+      {
+        "variant": "palco",
+        "name": "Palco",
+        "tag": "Estrutura de cena",
+        "image": "Imagens serviços/06 - Palco.png",
+        "imageAlt": "Estrutura de palco montada com luzes em evento"
+      },
+      {
+        "variant": "estrutura",
+        "name": "Estrutura",
+        "tag": "Montagem completa da produção",
+        "image": "Imagens serviços/07 - Estrutura.png",
+        "imageAlt": "Multidão sob estrutura de luz de um grande evento"
+      }
+    ],
+
+    "videos": [
+      {
+"badge": "PLAY",
+      "title": "DJ em movimento",
+      "dot": ".",
+      "body": "Um registro audiovisual do serviço de DJ integrado à experiência do evento.",
+      "video": "imagens baixadas/IMG_5392.MP4",
+      "poster": "imagens baixadas/IMG_5393.JPG.jpeg",
+      "videoLabel": "Vídeo do serviço de DJ da Sheldon",
+      "ctaLabel": "Solicitar orçamento",
+      "ctaHref": "#orcamento"
+      }
+    ]
+  },
+
+  "reels": {
+    "titleLines": ["ESTRUTURAS", "EM CONTEXTO"],
+    "intro": "Registros verticais para visualizar detalhes da estrutura e sua presença no ambiente.",
+    "items": [
+      {
+"badge": "REGISTRO 01",
+      "title": "Apresentação da estrutura",
+      "video": "imagens baixadas/VIDEO ESTRUTURAS.MP4",
+      "poster": "imagens baixadas/IMG_5398.JPG.jpeg",
+      "videoLabel": "Vídeo de apresentação da estrutura Sheldon",
+      "playLabel": "Reproduzir apresentação da estrutura"
+      },
+      {
+"badge": "REGISTRO 02",
+      "title": "Estrutura instalada",
+      "video": "imagens baixadas/VIDEO ESTRUTURAS 2.MP4",
+      "poster": "imagens baixadas/IMG_5397.JPG.jpeg",
+      "videoLabel": "Vídeo de estrutura instalada em evento",
+      "playLabel": "Reproduzir vídeo da estrutura instalada"
+      },
+      {
+"badge": "REGISTRO 03",
+      "title": "Estrutura em uso",
+      "video": "imagens baixadas/VIDEO ESTRUTURAS 3.MP4",
+      "poster": "imagens baixadas/IMG_5397.JPG.jpeg",
+      "videoLabel": "Vídeo de estrutura integrada ao evento",
+      "playLabel": "Reproduzir vídeo da estrutura em uso"
+      }
+    ]
+  },
+
+  "features": {
+    "items": [
+      {
+        "invert": "",
+        "eyebrow": "ILUMINAÇÃO",
+        "title": "A LUZ MUDA\nTODO O AMBIENTE",
+        "body": "Projetos de iluminação pensados para transformar espaços, destacar cenários e criar a atmosfera certa em cada momento do evento.",
+        "meta": "MOVING HEADS · ILUMINAÇÃO CÊNICA · AMBIENTE",
+        "image": "assets/sheldonmaisquedj_1776265276_3875916390528642641_302537259.jpg",
+        "imageAlt": "Cenário de evento com iluminação de ambiente"
+      },
+      {
+        "invert": " fl",
+        "eyebrow": "PAINEL DE LED",
+        "title": "IMAGEM QUE FAZ\nPARTE DO CENÁRIO",
+        "body": "Painéis de LED para conteúdo, identidade visual, transmissões, retrospectivas, cenários e experiências imersivas.",
+        "meta": "CONTEÚDO · IDENTIDADE · TRANSMISSÃO · IMERSÃO",
+        "image": "assets/sheldonmaisquedj_1787145794_3967188846034685444_302537259.jpg",
+        "imageAlt": "Momento de festa com retroprojeção e luzes em movimento"
+      },
+      {
+        "invert": "",
+        "eyebrow": "PISO DE VIDRO",
+        "title": "O CHÃO TAMBÉM\nFAZ PARTE DO SHOW",
+        "body": "Pisos de vídeo que transformam a pista em um elemento visual ativo do evento.",
+        "meta": "PISTA DE VÍDEO · CENÁRIO ATIVO · EXPERIÊNCIA",
+        "image": "assets/sheldonmaisquedj_1783947828_3940362299227491579_302537259.jpg",
+        "imageAlt": "Pista de evento preparada com iluminação de chão"
+      }
+    ]
+  },
+
+  "portfolio": {
+    "eyebrow": "EVENTOS",
+    "titleLines": [
+      { "text": "ALGUNS EVENTOS", "dot": "." },
+      { "text": "MUITAS HISTÓRIAS", "dot": "." }
+    ],
+    "chips": ["15 anos", "Casamentos", "Aniversários", "Formaturas", "Corporativos", "Festas"],
+    "items": [
+      {
+        "variant": "corp",
+        "name": "EVENTOS CORPORATIVOS",
+        "meta": "REGISTRO VISUAL · NATAL/RN",
+        "services": "Estrutura e produção audiovisual",
+        "href": "#orcamento",
+        "image": "assets/sheldonmaisquedj_1784553620_3945444071371714718_302537259.jpg",
+        "imageAlt": "Evento corporativo com palco e projeção"
+      },
+      {
+"variant": "quinze",
+      "name": "15 ANOS",
+        "meta": "REGISTRO VISUAL · NATAL/RN",
+        "services": "Som, luz e tecnologia em contexto",
+        "href": "#orcamento",
+        "image": "imagens baixadas/IMG_5397.JPG.jpeg",
+        "imageAlt": "Celebração de 15 anos com estrutura de iluminação"
+      },
+      {
+        "variant": "casa",
+        "name": "CASAMENTOS",
+        "meta": "REGISTRO VISUAL · NATAL/RN",
+        "services": "Estrutura integrada ao ambiente",
+        "href": "#orcamento",
+        "image": "imagens baixadas/IMG_5398.JPG.jpeg",
+        "imageAlt": "Casamento sobre piso iluminado com estrutura de DJ"
+      },
+      {
+        "variant": "aniversario",
+        "name": "ANIVERSÁRIOS",
+        "meta": "REGISTRO VISUAL · NATAL/RN",
+        "services": "Experiência audiovisual",
+        "href": "#orcamento",
+        "image": "imagens baixadas/aniversários.jpg",
+        "imageAlt": "Debutante em cenário floral com iluminação azul"
+      },
+      {
+        "variant": "formatura",
+        "name": "FORMATURAS",
+        "meta": "REGISTRO VISUAL · NATAL/RN",
+        "services": "Produção para grandes momentos",
+        "href": "#orcamento",
+        "image": "assets/sheldonmaisquedj_1783947828_3940362302482250639_302537259.jpg",
+        "imageAlt": "Salão de formatura com decoração e recepção"
+      },
+      {
+        "variant": "festas",
+        "name": "FESTAS",
+        "meta": "REGISTRO VISUAL · NATAL/RN",
+        "services": "Atmosfera, estrutura e operação",
+        "href": "#orcamento",
+        "image": "assets/sheldonmaisquedj_1776265276_3875916390528642641_302537259.jpg",
+        "imageAlt": "Convidadas dançando em festa com iluminação especial"
+      }
+    ]
+  },
+
+  "transition": {
+    "titleLines": [
+      { "text": "QUANDO AS LUZES" },
+      { "text": "SE ACENDEM", "dot": "," },
+      { "text": "A EXPERIÊNCIA" },
+      { "text": "COMEÇA", "dot": "." }
+    ],
+    "image": "assets/sheldonmaisquedj_1783681674_3938129715122437663_302537259.jpg",
+    "imageAlt": "Público de evento sob luzes fortes do palco"
+  }
+}
