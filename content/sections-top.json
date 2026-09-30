@@ -1,44 +1,17 @@
 {
   "header": {
     "nav": [
-      {
-        "label": "Início",
-        "href": "#inicio"
-      },
-      {
-        "label": "Sobre",
-        "href": "#sobre"
-      },
-      {
-        "label": "Serviços",
-        "href": "#servicos"
-      },
-      {
-        "label": "Eventos",
-        "href": "#eventos"
-      }
+      { "label": "Início", "href": "#inicio" },
+      { "label": "Sobre", "href": "#sobre" },
+      { "label": "Serviços", "href": "#servicos" },
+      { "label": "Eventos", "href": "#eventos" }
     ],
     "drawerNav": [
-      {
-        "label": "Início",
-        "href": "#inicio"
-      },
-      {
-        "label": "Sobre",
-        "href": "#sobre"
-      },
-      {
-        "label": "Serviços",
-        "href": "#servicos"
-      },
-      {
-        "label": "Eventos",
-        "href": "#eventos"
-      },
-      {
-        "label": "Solicitar orçamento",
-        "href": "#orcamento"
-      }
+      { "label": "Início", "href": "#inicio" },
+      { "label": "Sobre", "href": "#sobre" },
+      { "label": "Serviços", "href": "#servicos" },
+      { "label": "Eventos", "href": "#eventos" },
+      { "label": "Solicitar orçamento", "href": "#orcamento" }
     ],
     "ctaLabel": "Solicitar orçamento",
     "ctaHref": "https://wa.me/558488196161?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Sheldon%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20evento."
@@ -46,20 +19,10 @@
   "hero": {
     "eyebrow": "NATAL/RN · DESDE 2011",
     "titleLines": [
-      {
-        "text": "MAIS QUE"
-      },
-      {
-        "text": "SOM",
-        "dot": "."
-      },
-      {
-        "text": "MAIS QUE"
-      },
-      {
-        "text": "LUZ",
-        "dot": "."
-      }
+      { "text": "MAIS QUE" },
+      { "text": "SOM", "dot": "." },
+      { "text": "MAIS QUE" },
+      { "text": "LUZ", "dot": "." }
     ],
     "sub": "Desde 2011, a Sheldon entrega estrutura, tecnologia e experiência audiovisual para festas, casamentos, aniversários, formaturas e grandes eventos em Natal/RN.",
     "ctaLabel": "Planejar meu evento",
@@ -75,12 +38,7 @@
   },
   "authority": {
     "items": [
-      {
-        "prefix": "DESDE ",
-        "count": 2011,
-        "suffix": "",
-        "label": "ANO DE FUNDAÇÃO"
-      },
+      { "prefix": "DESDE ", "count": 2011, "suffix": "", "label": "ANO DE FUNDAÇÃO" },
       {
         "prefix": "",
         "count": 500,
@@ -88,27 +46,13 @@
         "suffixItalic": true,
         "label": "EVENTOS REALIZADOS"
       },
-      {
-        "prefix": "NATAL",
-        "count": 0,
-        "suffix": "RN",
-        "dot": true,
-        "label": "CIDADE SEDE"
-      },
-      {
-        "prefix": "ESTRUTURA",
-        "count": 0,
-        "suffix": "",
-        "label": "COMPLETA"
-      }
+      { "prefix": "NATAL", "count": 0, "suffix": "RN", "dot": true, "label": "CIDADE SEDE" },
+      { "prefix": "ESTRUTURA", "count": 0, "suffix": "", "label": "COMPLETA" }
     ]
   },
   "concept": {
     "eyebrow": "SOBRE",
-    "titleLines": [
-      "NÃO É SÓ SOBRE",
-      "EQUIPAMENTOS"
-    ],
+    "titleLines": ["NÃO É SÓ SOBRE", "EQUIPAMENTOS"],
     "lead": "É sobre entender o ambiente, o público e o momento certo para que som, luz e tecnologia funcionem juntos.",
     "body": "Cada evento recebe uma estrutura pensada para transformar o espaço e entregar a experiência que aquele momento pede.",
     "image": "assets/sheldonmaisquedj_1776265276_3875916384656566460_302537259.jpg",

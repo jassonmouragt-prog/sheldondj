@@ -159,12 +159,45 @@ export async function readDocument(fileId) {
   return { fileId, sha, data };
 }
 
+const INLINE_LIMIT = 96;
+
+/**
+ * Serializa mantendo objetos curtos em uma linha, no mesmo estilo em que os
+ * JSONs estao escritos. Sem isso, salvar uma palavra reformata o arquivo
+ * inteiro e o diff no GitHub deixa de ser legivel. Depois de normalizado, cada
+ * arquivo e exatamente a saida desta funcao, entao salvar sem mexer em nada
+ * gera um commit vazio.
+ */
+export function formatJson(value, indent = 0) {
+  const pad = '  '.repeat(indent);
+  const inner = '  '.repeat(indent + 1);
+
+  if (Array.isArray(value)) {
+    if (value.length === 0) return '[]';
+    const inline = `[${value.map((item) => formatJson(item, 0)).join(', ')}]`;
+    if (!inline.includes('\n') && inline.length <= INLINE_LIMIT) return inline;
+    const items = value.map((item) => inner + formatJson(item, indent + 1));
+    return `[\n${items.join(',\n')}\n${pad}]`;
+  }
+
+  if (isPlainObject(value)) {
+    const keys = Object.keys(value);
+    if (keys.length === 0) return '{}';
+    const inline = `{ ${keys.map((key) => `${JSON.stringify(key)}: ${formatJson(value[key], 0)}`).join(', ')} }`;
+    if (!inline.includes('\n') && inline.length <= INLINE_LIMIT) return inline;
+    const entries = keys.map((key) => `${inner}${JSON.stringify(key)}: ${formatJson(value[key], indent + 1)}`);
+    return `{\n${entries.join(',\n')}\n${pad}}`;
+  }
+
+  return JSON.stringify(value);
+}
+
 export async function saveDocument(fileId, data, message) {
   const file = findFile(fileId);
   if (!file) throw new ValidationError('documento desconhecido');
   const { sha } = await readFile(file.path);
   validateDocument(fileId, data);
-  const text = `${JSON.stringify(data, null, 2)}\n`;
+  const text = `${formatJson(data)}\n`;
   await writeFile(file.path, text, sha, message);
   return { path: file.path, bytes: text.length };
 }

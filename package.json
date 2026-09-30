@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node build/build.mjs",
     "dev": "node build/build.mjs",
-    "check": "node build/check-text.mjs && node build/check-media.mjs && node build/check-api.mjs && node build/check-routes.mjs && node build/check-github.mjs && node build/check-schema.mjs && node build/check-panel.mjs",
+    "check": "node build/check-text.mjs && node build/check-media.mjs && node build/check-api.mjs && node build/check-routes.mjs && node build/check-github.mjs && node build/check-schema.mjs && node build/check-panel.mjs && node build/check-format.mjs",
     "check:text": "node build/check-text.mjs",
     "check:media": "node build/check-media.mjs",
     "check:api": "node build/check-api.mjs",
@@ -15,6 +15,8 @@
     "check:github": "node build/check-github.mjs",
     "check:schema": "node build/check-schema.mjs",
     "check:panel": "node build/check-panel.mjs",
+    "check:format": "node build/check-format.mjs",
+    "normalize": "node build/normalize-content.mjs",
     "check:markup": "node build/check.mjs",
     "schema": "python build/make-schema.py"
   },

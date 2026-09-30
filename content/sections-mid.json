@@ -3,7 +3,6 @@
     "eyebrow": "SERVIÇOS",
     "titleLines": ["TUDO O QUE O SEU", "EVENTO PRECISA"],
     "intro": "Soluções apresentadas individualmente, com espaço para detalhes, imagens e registros em vídeo.",
-
     "items": [
       {
         "variant": "illum",
@@ -55,53 +54,50 @@
         "imageAlt": "Multidão sob estrutura de luz de um grande evento"
       }
     ],
-
     "videos": [
       {
-"badge": "PLAY",
-      "title": "DJ em movimento",
-      "dot": ".",
-      "body": "Um registro audiovisual do serviço de DJ integrado à experiência do evento.",
-      "video": "imagens baixadas/IMG_5392.MP4",
-      "poster": "imagens baixadas/IMG_5393.JPG.jpeg",
-      "videoLabel": "Vídeo do serviço de DJ da Sheldon",
-      "ctaLabel": "Solicitar orçamento",
-      "ctaHref": "#orcamento"
+        "badge": "PLAY",
+        "title": "DJ em movimento",
+        "dot": ".",
+        "body": "Um registro audiovisual do serviço de DJ integrado à experiência do evento.",
+        "video": "imagens baixadas/IMG_5392.MP4",
+        "poster": "imagens baixadas/IMG_5393.JPG.jpeg",
+        "videoLabel": "Vídeo do serviço de DJ da Sheldon",
+        "ctaLabel": "Solicitar orçamento",
+        "ctaHref": "#orcamento"
       }
     ]
   },
-
   "reels": {
     "titleLines": ["ESTRUTURAS", "EM CONTEXTO"],
     "intro": "Registros verticais para visualizar detalhes da estrutura e sua presença no ambiente.",
     "items": [
       {
-"badge": "REGISTRO 01",
-      "title": "Apresentação da estrutura",
-      "video": "imagens baixadas/VIDEO ESTRUTURAS.MP4",
-      "poster": "imagens baixadas/IMG_5398.JPG.jpeg",
-      "videoLabel": "Vídeo de apresentação da estrutura Sheldon",
-      "playLabel": "Reproduzir apresentação da estrutura"
+        "badge": "REGISTRO 01",
+        "title": "Apresentação da estrutura",
+        "video": "imagens baixadas/VIDEO ESTRUTURAS.MP4",
+        "poster": "imagens baixadas/IMG_5398.JPG.jpeg",
+        "videoLabel": "Vídeo de apresentação da estrutura Sheldon",
+        "playLabel": "Reproduzir apresentação da estrutura"
       },
       {
-"badge": "REGISTRO 02",
-      "title": "Estrutura instalada",
-      "video": "imagens baixadas/VIDEO ESTRUTURAS 2.MP4",
-      "poster": "imagens baixadas/IMG_5397.JPG.jpeg",
-      "videoLabel": "Vídeo de estrutura instalada em evento",
-      "playLabel": "Reproduzir vídeo da estrutura instalada"
+        "badge": "REGISTRO 02",
+        "title": "Estrutura instalada",
+        "video": "imagens baixadas/VIDEO ESTRUTURAS 2.MP4",
+        "poster": "imagens baixadas/IMG_5397.JPG.jpeg",
+        "videoLabel": "Vídeo de estrutura instalada em evento",
+        "playLabel": "Reproduzir vídeo da estrutura instalada"
       },
       {
-"badge": "REGISTRO 03",
-      "title": "Estrutura em uso",
-      "video": "imagens baixadas/VIDEO ESTRUTURAS 3.MP4",
-      "poster": "imagens baixadas/IMG_5397.JPG.jpeg",
-      "videoLabel": "Vídeo de estrutura integrada ao evento",
-      "playLabel": "Reproduzir vídeo da estrutura em uso"
+        "badge": "REGISTRO 03",
+        "title": "Estrutura em uso",
+        "video": "imagens baixadas/VIDEO ESTRUTURAS 3.MP4",
+        "poster": "imagens baixadas/IMG_5397.JPG.jpeg",
+        "videoLabel": "Vídeo de estrutura integrada ao evento",
+        "playLabel": "Reproduzir vídeo da estrutura em uso"
       }
     ]
   },
-
   "features": {
     "items": [
       {
@@ -133,13 +129,9 @@
       }
     ]
   },
-
   "portfolio": {
     "eyebrow": "EVENTOS",
-    "titleLines": [
-      { "text": "ALGUNS EVENTOS", "dot": "." },
-      { "text": "MUITAS HISTÓRIAS", "dot": "." }
-    ],
+    "titleLines": [{ "text": "ALGUNS EVENTOS", "dot": "." }, { "text": "MUITAS HISTÓRIAS", "dot": "." }],
     "chips": ["15 anos", "Casamentos", "Aniversários", "Formaturas", "Corporativos", "Festas"],
     "items": [
       {
@@ -152,8 +144,8 @@
         "imageAlt": "Evento corporativo com palco e projeção"
       },
       {
-"variant": "quinze",
-      "name": "15 ANOS",
+        "variant": "quinze",
+        "name": "15 ANOS",
         "meta": "REGISTRO VISUAL · NATAL/RN",
         "services": "Som, luz e tecnologia em contexto",
         "href": "#orcamento",
@@ -198,7 +190,6 @@
       }
     ]
   },
-
   "transition": {
     "titleLines": [
       { "text": "QUANDO AS LUZES" },
