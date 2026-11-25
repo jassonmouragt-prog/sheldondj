@@ -8,49 +8,49 @@
         "variant": "illum",
         "name": "Iluminação",
         "tag": "Atmosfera & cena",
-        "image": "Imagens serviços/01 - Iluminação.png",
+        "image": "media/palco-cinematografico-com-feixes-de-luz-1e186a5.png",
         "imageAlt": "Feixes de iluminação âmbar em pista de evento"
       },
       {
         "variant": "led",
         "name": "Painel de LED",
         "tag": "Conteúdo & imersão",
-        "image": "Imagens serviços/02 - Painel de Led.png",
+        "image": "media/painel-led-elegante-com-folhagens-e-trelica-65ecfd5.png",
         "imageAlt": "Painel de LED colorido integrado ao cenário do evento"
       },
       {
         "variant": "som",
         "name": "Som",
         "tag": "Sonorização",
-        "image": "Imagens serviços/03 - Som.png",
+        "image": "media/montagem-de-dj-com-luzes-estelares-11575aa.png",
         "imageAlt": "Iluminação de palco sobre equipamento de som"
       },
       {
         "variant": "dj",
         "name": "DJ",
         "tag": "Animação musical",
-        "image": "Imagens serviços/04 - DJ.png",
+        "image": "media/img_5132-2d31045.jpg",
         "imageAlt": "Retrato de DJ da Sheldon"
       },
       {
         "variant": "piso",
-        "name": "Piso de vidro",
+        "name": "Piso Paris",
         "tag": "Pista ativa",
-        "image": "Imagens serviços/05 - Piso de vidro.png",
+        "image": "media/cc8edcb3-4f52-4cc7-8ebd-c4970388fc85-fb79798.png",
         "imageAlt": "Piso de vidro iluminado integrado ao evento"
       },
       {
         "variant": "palco",
         "name": "Palco",
         "tag": "Estrutura de cena",
-        "image": "Imagens serviços/06 - Palco.png",
+        "image": "media/palco-iluminado-com-monograma-aj-c89fef0.png",
         "imageAlt": "Estrutura de palco montada com luzes em evento"
       },
       {
         "variant": "estrutura",
         "name": "Estrutura",
         "tag": "Montagem completa da produção",
-        "image": "Imagens serviços/07 - Estrutura.png",
+        "image": "media/img_1174-37c6a4f.jpg",
         "imageAlt": "Multidão sob estrutura de luz de um grande evento"
       }
     ],
